@@ -1,0 +1,170 @@
+* {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(90deg, #c7c5f4, #776bcc);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background: linear-gradient(90deg, #5f56a5, #7c78b8);
+  width: 360px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 32px;
+}
+
+.login .login__content {
+    z-index: 99;
+}
+
+.login > * {
+    position: absolute;
+}
+
+.background__shape {
+    transform: rotateZ(45deg);
+}
+
+/* shape 1 */
+.login::after {
+    content: "";
+    width: 520px;
+    height: 520px;
+    border-radius: 75px;
+    right: 143px;
+    bottom: 100px;
+    transform: rotateZ(45deg);
+    background-color: white;
+    position: absolute;
+}
+
+/* shape 2 */
+.login span::after {
+    content: "";
+    height: 220px;
+    width: 220px;
+    background: #6C63AC;
+    border-radius: 25px;
+    position: absolute;
+    top: -295px;
+    left: 5px;
+}
+
+/* shape 3 */
+.login span::before {
+    content: "";
+    height: 540px;
+    width: 190px;
+    background: linear-gradient(270deg, #5D54A4, #6A679E);
+    border-radius: 30px;
+    position: absolute;
+    top: -275px;
+    left: 250px;
+}
+
+/* Shape 4 */
+.login::before {
+    content: "";
+    height: 400px;
+	width: 200px;
+    background: #7E7BB9;	
+    top: 420px;
+	right: 50px;	
+	border-radius: 60px;
+    position: absolute;
+    transform: rotateZ(45deg);
+}
+
+.login__content {
+    top: 160px;
+}
+
+/* input */
+.login__input {
+    width: 200px;
+}
+
+.login__input__item {
+    border-bottom: #d3d3d3 2px solid;
+    color: #6A679E;
+}
+
+.login__input__item:hover, .login__input__item:focus, .login__input__item:active {
+    border-bottom-color: #6A679E;
+}
+
+.login__input__item input {
+    border: none;
+    padding: 12px 10px;
+    background: transparent;
+}
+
+.login__input__item:nth-child(2) {
+    margin-top: 36px;
+}
+
+.login__input__item input:focus-visible, .login__input__item input:active {
+    outline: none;
+}
+
+/* button */
+.login__button {
+    margin-top: 56px;
+}
+
+.login__button button {
+    background: white;
+    border: #D4D3E8 1px solid;
+    border-radius: 30px;
+    padding: 20px;
+    width: 265px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #514ea0;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px #5C5696;
+}
+
+.login__button button:hover {
+    border-color: #514ea0;
+}
+
+.login__button button i {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Social */
+.login__social {
+    color: white;
+    bottom: -135px;
+    right: -14px;
+    position: absolute;
+}
+
+.login__social p {
+    font-size: 18px;
+}
+
+.login__social .login__social__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 16px;
+}
+
+.login__social .login__social__icons i:hover {
+    transform: scale(1.5);	
+}
